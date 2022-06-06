@@ -3,14 +3,7 @@ body {
     background-repeat: no-repeat;
     background-size: 104vmax;
     background-position: fixed top;
-
-
-
 }
-
-
-
-
 
 
 .navbar {
@@ -41,3 +34,15 @@ body {
     color: black;
     margin-right: 20px;
 }
+
+@media screen and (max-width:992px) {
+    .container { 
+      margin-top: 1em;
+      text-shadow: 1px 1px 1px white;
+    }
+    body {
+        background-size: cover;
+        background-position: fixed bottom;
+    }
+    
+  }
