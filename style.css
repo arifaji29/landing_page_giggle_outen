@@ -1,48 +1,365 @@
-body {
-    background-image: url('img/bg.png');
-    background-repeat: no-repeat;
-    background-size: 104vmax;
-    background-position: fixed top;
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 
-.navbar {
-    padding-right: 10px;
-    padding-left: 20px;
+/* elemen header */
+body {
+    font-family: 'Quicksand', sans-serif;
+    overflow-x: hidden;
+    padding: 0 auto;
+    margin: 0 auto;
+}
 
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+}
+
+.logobrand {
+    width: 80px;
+
+
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    font-size: 1.1em;
+    width: 40%;
+    justify-content: space-between;
+    padding-right: 30px;
+    
+}
+
+
+nav ul li a {
+    color: #E4A354;
+    text-decoration: none;
+
+}
+
+nav ul li a:hover {
+    color: #fa9519;
 }
 
 .tombol {
     background-color: #E4A354;
     border-radius: 20px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 9px;
     color: white;
+    border: none;
+}
+
+.tombol:hover {
+    background-color: #fcbd6b;
+}
+
+.menuToggle {
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+
 
 }
 
-.tombol-read {
+.menuToggle button {
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    top: -5px;
+    left: -5px;
+    opacity: 0;
+    cursor: pointer;
+
+}
+
+.menuToggle span {
+    display: block;
+    width: 28px;
+    height: 3px;
     background-color: #E4A354;
-    border-radius: 20px;
-    padding-left: 15px;
-    padding-right: 15px;
+    border-radius: 3px;
+
+}
+
+.p-justify {
+    text-align: justify;
+}
+
+
+
+header {
+    background: linear-gradient(to bottom, #ffffff, #ffe0b8);
+    margin: 0;
+  
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    box-sizing: border-box;
+    padding-top: 165px;
+}
+
+.cover {
+    width: 60%;
+    height: 100%;
+   
+}
+
+.cover img {
+    width: 50%;
+}
+
+.tagline {
+    width: 30%;
+    height: 100%;
+}
+
+.tagline h1{
+    color: #FC6C34
+}
+
+/* elemen main */
+main {
+    background: linear-gradient(to bottom, #ffe0b8, #ffffff);
+    margin-top: 0 auto;
+    padding: 25px;
+
+}
+.judul-tengah{
+    text-align: center;  
+  }
+
+article {
+    padding-top: 70px;
+    padding-bottom: 200px;
+    height: 950px;
+}
+
+
+
+
+.container-dua {
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    margin: 50px auto;
     color: white;
+
+
+}
+
+.box {
+    width: 30%;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: 1px 1px 6px grey;
+    background-color: #fcb35a;
+    text-align: center;
+}
+
+.container-dua :hover {
+    transform: scale(1.02);
 }
 
 
-.nav-link {
+#readMore {
+    display: none;
+}
+
+#Biodata {
+    margin: 0 auto;
+    width: 25%;
+    background-color: #fcbd6b;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 7px grey;
+
+}
+
+.biodata-header {
+    text-align: center;
+}
+
+.biodata-header img {
+    width: 90px;
+    border-radius: 60px;
+
+}
+
+/* elemen footer */
+footer {
+    background: linear-gradient(to top, #ffe0b8, #ffffff);
+    margin: 0 auto;
+    padding-bottom: 20px;
+
+}
+
+.copyright {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 10px;
+
+}
+
+.followUs {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 150px;
+
+}
+
+.followUs a {
+    text-decoration: none;
     color: black;
-    margin-right: 20px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bolder;
 }
 
-@media screen and (max-width:992px) {
-    .container { 
-      margin-top: 1em;
-      text-shadow: 1px 1px 1px white;
+
+
+
+/* Breakpoint */
+
+/* tablet */
+@media screen and (max-width:768px) {
+    nav ul {
+        width: 50%;
     }
-    body {
-        background-size: cover;
-        background-position: fixed bottom;
+}
+
+/* mobile */
+@media screen and (max-width:576px) {
+    nav {
+        box-shadow: 2px 1px 9px #E4A354;
+        background-color: white;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content:space-between;
+        
+          
+    }
+
+    nav ul {
+        position: absolute;
+        flex-direction: column;
+        right: 0;
+        top: 0;
+        width: 40%;
+        height: 90vh;
+        background-color: #E4A354;
+        align-items: left;
+        justify-content: space-evenly;
+        z-index: 2;
+        transform: translateX(100%);
+        transition: all 1s;
+        margin-right: 0;
+        margin-top: 75px;
+        opacity: 90%;
+    }
+
+    nav ul li a {
+        color: white;
+    }
+
+    nav ul li a:hover {
+        color: #f8cb94;
     }
     
-  }
+
+    nav ul.slide {
+        transform: translateX(0%);
+    }
+
+    .logobrand {
+        width: 55px;
+        margin-left: 1rem;
+
+    }
+
+    .menuToggle {
+        display: flex;
+        margin-right: 1.2rem;
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+         width: 100%;
+         height: auto;
+         flex-flow: wrap;
+         padding-left: 2rem;
+         padding-right: 2 rem;
+        
+    }
+    .cover img {
+        width: 100%;
+    }
+    
+    .cover {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        width: 80%;
+        height: 80%;
+    }
+
+    .tagline {
+        width: 100%;
+        text-align: left;
+    }
+
+#Article{
+    margin-top: 17rem;
+}
+    
+    .container-dua {
+       display: flex;
+       justify-content: space-around;
+        width: 80%;
+        height: auto;
+        flex-flow: wrap;
+        
+    }
+
+    .box {
+        margin-bottom: 1rem;
+        width: 100%;
+        height: 100%;
+       
+    }
+
+    #Biodata{
+        width: 80%;
+    }
+    .copyright{
+        width: 70%;
+    }
+
+
+}
+

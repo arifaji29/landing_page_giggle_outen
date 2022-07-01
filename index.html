@@ -5,69 +5,160 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <!-- link CSS -->
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=M+PLUS+Rounded+1c:wght@100;400;800&display=swap" rel="stylesheet">
+    <!-- link font -->
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <title>Giggle Outen</title>
+    <!-- link icon font awesome -->
+    <script src="https://kit.fontawesome.com/124e5b8356.js" crossorigin="anonymous"></script>
+    <title>Submission Dicoding-Arif</title>
 </head>
 
 <body>
-    
-        <nav class="navbar navbar-expand-lg justify-content-end mb-5">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="/img/logo.png" alt="" width="80" class="d-inline-block align-text-top">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav ms-auto">
-                        <a class="nav-link" href="index.html">Home</a>
-                        <a class="nav-link" href="about.html">About</a>
-                        <a class="nav-link" href="artikel.html">Article</a>
-                        <button class="btn tombol"><a href="https://www.instagram.com/giggleouten/?hl=id" style="text-decoration:none ; color:white;">Contact Us</a>
-                        </button>
-                    </div>
-                </div>
+    <header>
+        <nav>
+            <div class="logo">
+                <img class="logobrand" src="img/logo.png"  alt="logo">
+            </div>
+            <ul>
+
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Product">Product</a></li>
+                <li><a href="#Article">Article</a></li>
+                <li><a class="tombol" href="#Contact">Contact Us</a></li>
+
+            </ul>
+            <div class="menuToggle">
+                <button onclick="toggleButton()"></button>
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </nav>
+        <div class='container' id="Home">
+            <div class="cover">
+                <img src="img/cover-profil.png"  alt="">
+            </div>
+            <div class="tagline">
+                <h1>Giggle Outen</h1>
+                <h3>Mainan Kayu Edukatif Ramah Anak</h3>
+                <p> Mainan kayu custom dengan variasi bentuk yang menarik dan ramah untuk anak</p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="content">
+            <article id="About" >
+                <h1 class="judul-tengah">Tentang Kami</h1>
+                <div class="kontenAbout">
+                    <p>
+                        Kami merupakan produsen mainan edukasi untuk anak yang sedang berkembang. Kami memiliki komitmen
+                        dan misi untuk memberikan karya terbaik dan berkualitas tinggi.
+                        <br>
+                        Kami memproduksi berbagai macam mainan anak usia balita hingga taman kanak-kanak. Mainan yang
+                        kami produksi antara lain :
+                        <li>Bussy Board</li>
+                        <li>Maze Board</li>
+                        <li>Puzzle papan dan Balok</li>
+                        <li>Jam Kayu</li>
+                        <li>dll.</li>
+                        <br><br>
+                        <b>
+                            Nama Usaha : CV Anugerah Bintang
+                            <br><br>
+                            Alamat : Kelurahan Pringrejo, Pekalongan Barat Kota Pekalongan
+                            <br><br>
+                            Tahun Berdiri : 2017
+                            <br><br>
+                            Owner : Sugiharto, S.Si
+                        </b>
+                    </p>
 
-        <section>
-            <div class="container">
-                <div class="row">
-                <div class="col-md-3">
-                  <h1 style="color:#FC6C34; font-family: 'Fredoka One', cursive;" data-aos="fade-up" data-aos-duration="1000">Giggle Outen</h1>
-                  <p data-aos="fade-left" data-aos-duration="1000" data-aos-delay="50" >
-                     
-                    Mainan kayu edukatif yang membantu keterampilan anak dalam mengeksplore benda-benda di sekitarnya. Mainan kayu custom dengan variasi bentuk yang menarik dan edukatif
-                  </p>
-                  <button class="btn tombol-read">
-                      <a href="about.html" style="text-decoration:none; color: white;">Read More</a>
-                  </button>
-               
-          
                 </div>
+
+            </article>
+            <article id="Product">
+                <h1 class="judul-tengah">Produk Kami</h1>
+                <div class="container-dua">
+                    <div class="box">
+                        <img src="img/produk1.png" width="100%" alt="">
+                        <h3>Maze Board</h3>
+                    </div>
+                    <div class="box">
+                        <img src="img/produk2.png" width="100%" alt="">
+                        <h3>Jam Kayu</h3>
+                    </div>
+                    <div class="box">
+                        <img src="img/produk3.png" width="100%" alt="">
+                        <h3>Buzy Board</h3>
+                    </div>
                 </div>
-              </div>
-        </section>
-    
+            </article>
+            <article id="Article">
+                <div>
+                    <h1 class="judul-tengah">Artikel</h1>
+                </div>
+                <div class="konten-Artikel p-justify">
+                    <h3>Apa itu Mainan Edukasi?</h3>
+                    <p> Pengertian populer dari mainan edukasi adalah 'mainan yang dapat membantu meningkatkan kemampuan
+                        anak atau membantu belajar anak dalam hal tertentu'. Walaupun sebenarnya pengertian semacam itu
+                        banyak membuat orangtua kebingungan karena bukankah semua mainan adalah mainan edukasi?</p>
+                    <p id="readMore"> Ya, pengertian bahwa semua mainan memiliki nilai edukasi adalah benar, beberapa
+                        diantara memiliki
+                        nilai edukasi lebih dibanding yang lainnya yang dapat menjadi sarana belajar dan membantu tumbuh
+                        kembang anak.
+                        <br><br>
+                        Contohnya, untuk anak, bola dapat berfungsi untuk membangun keterampilan motorik dasar
+                        dan juga meningkatkan koordinasi antar tangan dan mata. Namun, bermain bola dapat digunakan
+                        untuk
+                        belajar tentang gravitasi bumi atau perbedaan sudut matematika saat memantulkan bola dari tanah,
+                        tembok atau objek lainnya.
+                        <br><br>
+                        Walaupun mainan tidak dapat menggantikan pelajaran di sekolah, namun bila digunakan secara benar
+                        maka mainan tersebut dapat menjadi sumber belajar dan tumbuh kembang untuk seorang anak.
+                    </p>
 
+                </div>
+                <div>
+                    <button class="tombol" onclick="tombolRead()">Read More</button>
+                </div>
+            </article>
+            <article id="Contact">
+                <h1 class="judul-tengah">Kontak Kami</h1>
+                <div class="container-dua">
+                    <div class="box">
+                        <i class="fa-solid fa-house-user"></i>
+                        <h1>Alamat:</h1>
+                        <p>Jl. Waru No.23 Pringrejo Kecamatan Pekalongan Barat, Kota Pekalongan</p>
+                    </div>
+                    <div class="box" >
+                        <i class="fa-solid fa-phone"></i>
+                        <h1>Telephone/WA:</h1>
+                        <p>086457890123</p>
+                    </div>
+                    <div class="box">
+                        <i class="fa-solid fa-envelope"></i>
+                        <h1>Email:</h1>
+                        <p>giggleouten12@gmail.com</p>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+    <footer>
+        <div class="followUs">
+            Ikuti Kami:
+            <i class="fa-brands fa-instagram-square"><a href="https://www.instagram.com/giggleouten/?hl=id">giggleouten</a></i>
+        </div>
+        <div class="copyright">
+            &copy 2022 submission dicoding
+        </div>
+    </footer>
 
-    <!-- script bootstrap -->
-    <script src="/bootstrap-5.2.0-beta1-dist/js/bootstrap.bundle.min.js"></script>
-    <!-- script bootstrap -->
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
